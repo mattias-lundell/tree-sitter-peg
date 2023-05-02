@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-peg",
+  "version": "0.0.1",
+  "description": "A tree-sitter grammar for Parsing Expression Grammars (PEG) grammars",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test",
+    "build": "tree-sitter generate",
+    "parse": "tree-sitter parse"
+  },
+  "author": "Mattias Lundell",
+  "license": "MIT",
+  "repository": "https://github.com/mattias-lundell/tree-sitter-peg",
+  "dependencies": {
+    "nan": "^2.17.0",
+    "tree-sitter-cli": "^0.20.7"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.peg",
+      "file-types": [
+        "peg",
+	      "pegjs"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}
